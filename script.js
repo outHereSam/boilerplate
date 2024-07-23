@@ -10,8 +10,13 @@ const reverse = (string) => {
   return string.split("").reverse().join("");
 };
 
+const arrSum = (arr) => {
+  return arr.reduce((acc, curr) => acc + curr, 0);
+};
+
 module.exports = {
   greetUser,
   addNums,
   reverse,
+  arrSum,
 };
